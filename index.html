@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    
+    <div class="container">
+        
+
+        <h1 style="font-size: 5rem;">זיוף תמונה לביט</h1>
+        <div class="image-container">
+
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="editing">
+
+            <div class="inputs">
+                <div>
+                    <label for="textInput">phone:</label>
+                    <input type="text" class="input" id="phoneInput">
+                </div>
+                <div>
+                    <label for="textInput">Amount:</label>
+                    <input type="text" class="input" id="amountInput">
+                </div>
+                <div>
+                    <label for="dateInput">Date:</label>
+                    <input type="date" class="input" id="dateInput">
+                </div>
+                <div>
+                    <label for="timeInput">Time:</label>
+                    <input type="time" class="input" id="timeInput">
+                </div>
+            </div>
+
+            <button id="addTextButton">Add Text</button>
+     
+
+            <a id="downloadLink" style="display: none;"></a>
+
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <p>Created by <a href="https://github.com/fknMega">fknMega</a></p>
+            <p>For educational purposes only, I do not take responsibility for any illegal use of this tool.</p>
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

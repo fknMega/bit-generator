@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'bitmedium';
+    src: url('PoalimSansBIT-Medium.ttf') format('woff2'),
+         url('PoalimSansBIT-Medium.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bitbold';
+    src: url('CircularSpotifyTxT-Black.ttf') format('woff2'),
+         url('CircularSpotifyTxT-Black.ttf') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.container {
+    font-family: 'bitmedium', Arial, sans-serif;
+    position: relative;
+    margin: 20px auto;  /* centers the container */
+    width: 80%;  /* sets the container width to 80% of its parent */
+    max-width: 800px;  /* ensures the container doesn't grow too large on wide screens */    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: auto;
+}
+
+.editing {
+    margin: auto;
+    font-size: 2rem;
+    width: 50%;
+    padding: 20px;
+}
+
+.input {
+    font-size: larger;
+}
+
+.image-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+#canvas {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;  /* scales the image to fit the width of its container */
+    height: auto;  /* maintains the image's aspect ratio */
+    display: block;  /* removes any unwanted margins */
+    margin: 0 auto;  /* centers the image */}
+
+.text-overlay {
+    position: absolute;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .editing {
+        width: 100%;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .editing {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: medium;
+    }
+}
